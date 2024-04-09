@@ -16,10 +16,10 @@ public class Note {
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append("\nid: ").append(this.id);
-        sb.append("\ntitle: ").append(this.title);
-        sb.append("\ndescription: ").append(this.description);
-        sb.append("\ndone: ").append(this.done);
+        sb.append("\nid: ").append(id);
+        sb.append("\ntitle: ").append(title);
+        sb.append("\ndescription: ").append(description);
+        sb.append("\ndone: ").append(done);
         return sb.toString();
     }
 }
