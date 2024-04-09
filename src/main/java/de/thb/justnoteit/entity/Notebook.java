@@ -49,13 +49,14 @@ public class Notebook {
     }
 
     public Long getLatestNoteId(){
-        Long latestId = 0L;
-        for (Note note: this.getNotes()){
-            if(latestId < note.getId()){
-                latestId = note.getId();
-            }
-        }
-        return latestId;
+//        Long latestId = 0L;
+//        for (Note note: this.getNotes()){
+//            if(latestId < note.getId()){
+//                latestId = note.getId();
+//            }
+//        }
+//        return latestId;
+        return notes.get(notes.size() - 1).getId();
     }
 }
 
